@@ -5,10 +5,7 @@
 #ifndef ALGORITHMS_UTILITY_H
 #define ALGORITHMS_UTILITY_H
 
-
-class Utility {
-
-};
-
+bool isPrime(int x);
+bool is2MorePrime(int x);
 
 #endif //ALGORITHMS_UTILITY_H

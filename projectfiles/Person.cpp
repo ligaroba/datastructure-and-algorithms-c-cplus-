@@ -18,17 +18,41 @@ Person::Person(std::string firstName, std::string lastName, int arbitraryNumber)
         arbitraryNumber(arbitraryNumber){
         // Constructor Body : Normal to be empty cause all the work was done on initializers
         std::cout<< "Constructing ... " << std::endl;
-        std::cout << firstName << " " << lastName << " " << arbitraryNumber << std::endl;
+        std::cout << getName() << " " << getAbNumber() << std::endl;
 }
 Person::Person() :arbitraryNumber(10){
     std::cout<< "Constructing ... " << std::endl;
-    std::cout << firstName << " " << lastName << " " << arbitraryNumber << std::endl;
+    std::cout << getName() << " " << getAbNumber() << std::endl;
 
 }
-std::string Person::getName() {
+std::string Person::getName() const {
    return firstName + " " + lastName;
 }
+
+//Compare member function with an integer
+bool Person::operator<(int comparator) {
+
+    return getAbNumber()<comparator;
+}
+// Comparing two member functions that the function was called on another
+bool Person::operator<(Person const& p) const {
+   return getAbNumber()<p.getAbNumber();
+}
+// Compares i with pass by reference of p.getABNumber()
+bool operator>(int i , const Person &p)  {
+    return i>p.getAbNumber();
+}
+
+bool operator<(int i,const Person &p){
+    return i<p.getAbNumber();
+}
+/*
+bool operator<(const Person &p1,const Person &p2){
+    return p1<p2;
+}*/
+
+
 Person::~Person() {
     std::cout<< "Destructing ... " << std::endl;
-    std::cout << firstName << " " << lastName << " " << arbitraryNumber << std::endl;
+    std::cout << getName() << " " << getAbNumber() << std::endl;
 };
