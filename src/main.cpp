@@ -6,7 +6,7 @@
 
 
 using namespace std;
-int main() {
+int mains() {
 
     vector<Edge> edges {
             {0,6},{1,2},{1,4},{1,6},{3,0},
