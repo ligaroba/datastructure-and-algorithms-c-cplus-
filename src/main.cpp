@@ -1,8 +1,8 @@
 #include <iostream>
 #include<bits/stdc++.h>
 #include <vector>
-#include "graph/Graph.h"
-#include "graph/TopologicalSort.h"
+#include "graph/topologicalsort/Graph.h"
+#include "graph/topologicalsort/TopologicalSort.h"
 
 
 using namespace std;

@@ -2,8 +2,8 @@
 // Created by RLIGAYE on 5/8/2020.
 //
 
-#ifndef C___ALGORITHMS_GRAPH_H
-#define C___ALGORITHMS_GRAPH_H
+#ifndef CPP_DS_ALGORITHMS_GRAPH_H
+#define CPP_DS_ALGORITHMS_GRAPH_H
 #pragma once
 #include <vector>
 using namespace std;
@@ -34,4 +34,4 @@ public :
 
 
 
-#endif //C___ALGORITHMS_GRAPH_H
+#endif //CPP_DS_ALGORITHMS_GRAPH_H

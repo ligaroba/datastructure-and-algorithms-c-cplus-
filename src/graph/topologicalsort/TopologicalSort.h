@@ -2,8 +2,8 @@
 // Created by RLIGAYE on 5/8/2020.
 //
 
-#ifndef C___ALGORITHMS_TOPOLOGICALSORT_H
-#define C___ALGORITHMS_TOPOLOGICALSORT_H
+#ifndef CPP_DS_ALGORITHMS_TOPOLOGICALSORT_H
+#define CPP_DS_ALGORITHMS_TOPOLOGICALSORT_H
 #pragma once
 #include<vector>
 #include "Graph.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //C___ALGORITHMS_TOPOLOGICALSORT_H
+#endif //CPP_DS_ALGORITHMS_TOPOLOGICALSORT_H
